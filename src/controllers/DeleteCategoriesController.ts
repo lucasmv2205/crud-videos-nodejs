@@ -3,7 +3,7 @@ import { DeleteCategoriesService } from '../services/DeleteCategoriesService';
 
 export class DeleteCategoriesController{
   async handle(request: Request, response: Response){
-    const { id } = request.body
+    const { id } = request.params
 
     const service = new DeleteCategoriesService();
 
